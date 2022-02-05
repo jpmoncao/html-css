@@ -165,9 +165,13 @@ div.video > iframe {
 }
 
 aside {
-    margin-top: 20px;
+    display: block;
+    margin: 30px auto;
+
+    max-width: 700px;
     padding: -10px 10px 10px 10px;
 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     background-color: var(--cor0);
 }
 
@@ -183,6 +187,8 @@ aside ul {
     margin-left: 30px;
     list-style-position: inside;
     list-style-type: '\2611\00A0\00A0';
+    columns: 2;
+    padding: 15px 0px;
 }
 
 aside abbr {
