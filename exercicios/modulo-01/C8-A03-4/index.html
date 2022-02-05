@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark {
+            background-color: #72f1dfc9;
+        }
+    </style>
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais Formatações:</h1>
+
+    <h2>Negrito / Destaque</h2>
+        <p>
+            Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (NÃO semântica).
+        </p>
+        <p>
+            Nessa frase temos um <strong>termo em negrito</strong> usando a tag &lt;strong&gt; (semântica).
+        </p>
+
+    <h2>Itálico / Ênfase</h2>
+        <p>
+            Nessa frase temos um <i>termo em itálico</i> usando a &lt;i&gt; (NÃO semântica).</p>
+        <p>
+            Nessa frase temos um <em>termo em itálico</em> usando a &lt;em&gt; (semântica).
+        </p>
+
+    <h2>Marcação</h2>
+        <p>
+            Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;
+        </p>
+
+    <h2>Tamanho do texto</h2>
+        <p>
+            Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>.
+        </p>
+
+    <h2>Texto deletado</h2>
+        <p>
+            Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.
+        </p>
+    
+    <h2>Texto inserido</h2>
+        <p>
+            Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.
+        </p>
+
+    <h2>Texto sobrescrito</h2>
+        <p>
+            Para inserir coisas do tipo x<sup>20</sup>+3
+        </p>
+
+    <h2>Texto subescrito</h2>
+        <p>
+            Para inserir coisas do tipo H<sub>2</sub>0
+        </p>
+
+    <h2>Código</h2>
+    <pre><code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é par!')
+    else:
+        print(f'O número {num} é ímpar!)
+        </code></pre>
+    
+    <h2>Citações</h2>
+        <p>
+            Podemos fazer citações de frases: <br><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, molestiae?</q>
+        </p>
+        <p>
+            Podemos fazer citações de parágrafos:<br> <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cupiditate nemo rerum expedita numquam nulla in culpa voluptate commodi architecto distinctio quam. Suscipit possimus reprehenderit neque labore nostrum minima officiis?</blockquote>
+        </p>
+    
+    <h2>Abreviações</h2>
+        <p>
+            Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites.
+        </p>
+    <h2>Texto invertido</h2>
+        <p>
+            <bdo dir="rtl">Este texto está totalmente invertido no formato RIGHT-TO-LEFT</bdo>
+        </p>
+</body>
+</html>
