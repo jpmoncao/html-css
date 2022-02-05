@@ -118,7 +118,6 @@ main  p {
 }
 
 em {
-    text-decoration: underline;
     font-style: italic;
     color: #063D1E;
 }
@@ -144,4 +143,53 @@ main a:hover {
 
 main a::before {
     content: '🔗  ';
+}
+
+div.video {
+    margin-bottom: 30px;
+    margin: 0px -25px;
+    padding: 20px;
+    padding-bottom: 57%;
+    background-color: var(--cor5);
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    padding: 10px;
+
+    background-color: var(--cor0);
+}
+
+aside h1 {
+    background-color: var(--cor2);
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 8px;
+
+    background-color: #011309;
+    color: white;
+    font: normal normal 1em --fonte-padrao;
+    text-align: center;
+}
+
+footer a {
+    color: var(--cor1);
+    font-style: italic;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
