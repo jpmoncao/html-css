@@ -40,7 +40,6 @@ header {
     color: white;
     background-image: linear-gradient(180deg, var(--cor2), var(--cor4));
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
@@ -54,8 +53,10 @@ header p {
 }
 
 nav {
-    background-color: var(--cor4);
     padding: 5px;
+
+    background-color: var(--cor4);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 nav > a {
@@ -88,12 +89,12 @@ main {
     background-color: white;
 }
 
-main  h1 {
+main h1 {
     color: var(--cor4);
     font: normal bold 2em var(--fonte-titulo);   
 }
 
-main  h2 {
+main h2 {
     margin-top: 10px;
     padding-left: 15px;
 
@@ -103,7 +104,7 @@ main  h2 {
     font: normal normal 1.5em var(--fonte-titulo);   
 }
 
-main  p {
+main p {
     color: var(--cor5);
     text-align: justify;
     text-indent: 1.25cm;
@@ -142,7 +143,7 @@ main a:hover {
 }
 
 main a::before {
-    content: '🔗  ';
+    content: '\1F517\00A0';
 }
 
 div.video {
@@ -164,14 +165,38 @@ div.video > iframe {
 }
 
 aside {
-    padding: 10px;
+    margin-top: 20px;
+    padding: -10px 10px 10px 10px;
 
     background-color: var(--cor0);
 }
 
-aside h1 {
-    background-color: var(--cor2);
+aside > h3 {
+    margin: 0;
+    padding: 15px;
     border-radius: 5px;
+    
+    background-color: var(--cor3);
+}
+
+aside ul {
+    margin-left: 30px;
+    list-style-position: inside;
+    list-style-type: '\2611\00A0\00A0';
+}
+
+aside abbr {
+    text-decoration: underline;
+    background-color: #2fa86521;
+}
+
+aside abbr:hover {
+    color: #063D1E;
+    background-color: #2fa83f36;
+}
+
+aside p{
+    margin: 0px 15px;
 }
 
 footer {
