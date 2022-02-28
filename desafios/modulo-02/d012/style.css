@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+    --fonte1: Arial;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header {
+    min-height: ;
+
+    background-color: black;
+    color: white;   
+
+    margin-bottom: 50px;
+    padding: 50px 0px;
+}
+
+header > h1 {
+    font: small-caps 400 5.5em var(--fonte1), sans-serif;
+    text-align: center;
+
+    margin: 15px;
+}
+
+header > h2 {
+    font: normal 400 1em var(--fonte1), sans-serif;
+    text-align: center;
+}
+
+header > h2 > a{
+    text-decoration: none;
+
+    font-weight: bold;
+    color: white;
+}
+
+header > h2 > a:hover{
+    text-decoration: underline;
+}
