@@ -18,13 +18,13 @@ html, body {
     min-height: 100vh;
     background-color: darkgray;
 }
+
+/* HEADER */
 header {
-    min-height: ;
 
     background-color: black;
     color: white;   
 
-    margin-bottom: 50px;
     padding: 50px 0px;
 }
 
@@ -48,5 +48,59 @@ header > h2 > a{
 }
 
 header > h2 > a:hover{
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    background-color: white;
+    padding-top: 50px;
+}
+
+section {
+    padding: 10vh 0px;
+    padding-left: 30px;
+
+    line-height: 2em;
+}
+
+.section-normal {
+    background-color: white;
+
+}
+
+.section-image {
+    background-image: url(img/background001.jpg);
+        
+    color: white;
+}
+
+.section-image > p {
+    display: inline-block;
+
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 370px;
+    padding: 30px;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.7em;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+footer > h3 > a{
+    text-decoration: none;
+
+    font-weight: bold;
+    color: white;
+}
+
+footer > h3 > a:hover{
     text-decoration: underline;
 }
