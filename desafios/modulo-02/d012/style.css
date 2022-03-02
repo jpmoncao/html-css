@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+
 :root {
-    --fonte1: Arial;
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Sriracha', cursive;
+    --fonte3: Arial, Helvetica, sans-serif;
 }
 
 
@@ -12,7 +16,7 @@
 }
 
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte3);
     text-align: left;
 
     min-height: 100vh;
@@ -29,14 +33,14 @@ header {
 }
 
 header > h1 {
-    font: small-caps 400 5.5em var(--fonte1), sans-serif;
+    font: normal small-caps 700 10vw var(--fonte1), sans-serif;
     text-align: center;
 
     margin: 15px;
 }
 
 header > h2 {
-    font: normal 400 1em var(--fonte1), sans-serif;
+    font: normal 400 1em var(--fonte3), sans-serif;
     text-align: center;
 }
 
@@ -54,14 +58,16 @@ header > h2 > a:hover{
 /* MAIN */
 main {
     background-color: white;
-    padding-top: 50px;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
 }
 
 section {
     padding: 10vh 0px;
     padding-left: 30px;
 
-    line-height: 2em;
+    font:normal 400 4vw var(--fonte2);
+    line-height: 2em;   
 }
 
 .section-normal {
@@ -69,17 +75,32 @@ section {
 
 }
 
-.section-image {
+section#img001 {
     background-image: url(img/background001.jpg);
-        
-    color: white;
 }
+
+section#img002 {
+    background-image: url(img/background002.jpg);
+}
+
+.section-image{
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.65);
+}
+
 
 .section-image > p {
     display: inline-block;
 
+    font:normal 400 65% var(--fonte2);    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.55);
+    color: white;
+
     background-color: rgba(0, 0, 0, 0.45);
-    width: 370px;
+    width: 50vw;
     padding: 30px;
 }
 
@@ -89,6 +110,7 @@ footer {
     color: white;
     font-size: 0.7em;
 
+    margin-top: 40px;
     padding: 10px;
 
     text-align: center;
@@ -97,7 +119,7 @@ footer {
 footer > h3 > a{
     text-decoration: none;
 
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
 }
 
