@@ -19,24 +19,30 @@
         table {
             margin: auto;
 
-            height: 150px;
-            width: 600px;
+            height: 400px;
+            width: 400px;
 
             border: 2px solid black;
             border-collapse: collapse;
         }
 
-        tr.linha {
+        /* tr.linha {
             background-color: gray;
-        }
+        } */
 
         td {
-            text-align: center;
+            text-align: center; /* Alinhamento horiz.    == left -- center -- right  */
+            vertical-align: bottom; /* Alinhamento vert. == top -- middle -- bottom */
             border: 1px solid black;
         }
 
+        /*
         td.dado {
             background-color: aquamarine;
+        } */
+
+        .numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -52,12 +58,12 @@
         <tr class="linha">
             <td>A2
             <td>B2
-            <td>C2 <!-- É permitido pela W3C o não fechamento das tags <tr> e <td>. -->
+            <td class="numero">C2 <!-- É permitido pela W3C o não fechamento das tags <tr> e <td>. -->
         
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr class="linha">
             <td>A4</td>
