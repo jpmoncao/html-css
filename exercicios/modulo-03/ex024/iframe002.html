@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste com iframe</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         iframe {
             border: 2px solid black;
             display: block;
             margin: 0px auto;
+        }
+
+        .erro {
+            color: gray;
         }
     </style>
 </head>
@@ -19,7 +27,10 @@
     <h1>Teste com iframe</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error fuga quis, alias omnis esse qui. Voluptate reprehenderit, fuga delectus sit repudiandae necessitatibus voluptas deserunt molestiae animi ullam ab, harum dolorem.lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit iure vel illum fugit nemo, a, assumenda ratione quod aut magni nisi quam consequuntur voluptates porro ut maiores possimus nostrum?</p>
 
-    <iframe src="pagina001.html" height="500" width="100%" frameborder="1"></iframe>
+    <h3>Iframe</h3>
+    <iframe src="paginas-extras/pagina001.html" height="500" width="100%" frameborder="1">
+        <p class="erro">Infelizmente seu navegador não é compatível com esse recurso.</p>
+    </iframe>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolore tempore voluptatem porro amet vel sit labore ipsum quos, expedita accusantium. Dolor itaque laudantium amet necessitatibus nihil, cupiditate tempore sunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, modi quam laboriosam ea sed pariatur nostrum aliquam ratione sapiente iure eum voluptates dignissimos eaque! Sit excepturi tempore vitae minus facilis.</p>
 </body>
