@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #163029;
+    --secundary-color: #7d9c91;
+    --terciary-color: #d0c781;
+    --bg-color: #171717;
+    --text-color: #e5e5e5;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal normal 1em 'Poppins';
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+    display: flex;
+    align-items: center;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.03);
+
+    width: 100%;
+    max-width: 31.5rem;
+
+    margin: 2rem auto;
+    padding: 2rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 2rem;
+}
+
+div.input {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+input,
+button {
+    /* reset appeareance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+
+    padding: 1rem 0;
+
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    /* text */
+    color: var(--text-color);
+    font-size: 1em;
+
+}
+
+button {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    font: normal bold .8em 'Poppins';
+}
+
+input ~ label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+
+    color: rgba(255, 255, 255, 0.6) ;
+
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-1.5rem);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+.popup {
+    /*visibility: hidden;*/
+    position: absolute;
+    margin: 0px auto;
+    top: 29%;
+
+    background-color: #111;
+    padding: 2rem;
+    width: 20rem;
+    height: 20rem;
+
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: slideup;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+}
