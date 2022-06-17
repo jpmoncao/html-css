@@ -114,11 +114,11 @@ input:valid ~ label {
     padding: 0.4em;
 }
 
-.popup {
-    /*visibility: hidden;*/
+/*.popup {
+    visibility: hidden;
     position: absolute;
     margin: 0px auto;
-    top: 29%;
+    
 
     background-color: #111;
     padding: 2rem;
@@ -131,15 +131,33 @@ input:valid ~ label {
     flex-direction: column;
     justify-content: center;
 
-    transition: slideup;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@keyframes slideup {
+.popup button {
+    border-radius: 1rem;
+    margin: 1rem auto;
+    width: 10rem;
+}
+
+@-webkit-keyframes slide-top {
     0% {
-        transform: translateY(2rem);
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
     }
-
     100% {
-        transform: translateY(0rem);
+      -webkit-transform: translateY(-3rem);
+              transform: translateY(-3rem);
     }
-}
+  }
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-3rem);
+                transform: translateY(-3rem);
+    }
+} */

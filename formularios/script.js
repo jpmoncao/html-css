@@ -79,5 +79,6 @@ for (let field of fields) { // Para cada field dentro dos fields
 document.querySelector("form")
     .addEventListener("submit", (event) => {
         console.log("Enviar formulário")
+        
         event.preventDefault() // Não vai enviar o formulário
     }) // No seletor "form" adicione um evendo submit que quando true seguira a função declarada
