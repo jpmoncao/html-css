@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários com HTML e CSS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Devs</h1>
+        <h2>Preencha as informações e complete seu cadastro!</h2>
+    </header>
+
+    <main>
+        <form action="">
+            <fieldset class="group-names">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname">
+            </fieldset>
+
+            <div class="field email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="field password">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="radio dev-end">
+                <label for="dev-web">Área de atuação:</label>
+                <input type="radio" name="frontend" id="frontend">Front-end
+                <input type="radio" name="backend" id="backend">Back-end
+                <input type="radio" name="fullstack" id="fullstack">Full Stack
+            </div>
+
+            <div class="select seniority">
+                <label for="seniority">Escolha sua senioridade:</label>
+                <select name="seniority" id="seniority">
+                    <option value="" selected>Selecione</option>
+                    <option value="junior">Júnior</option>
+                    <option value="full">Pleno</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+
+            <div class="field experience">
+                <label for="experience-text">Conte um pouco sobre sua experiência:</label>
+                <textarea name="experience-text" id="experience-text" cols="30" rows="10">Olá mundo, meu nome é...</textarea>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
