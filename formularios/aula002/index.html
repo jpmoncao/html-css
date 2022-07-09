@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários com HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,22 +17,24 @@
 
     <main>
         <form action="">
-            <fieldset class="group-names">
-                <label for="name">Nome</label>
+            <div class="field name">
                 <input type="text" name="name" id="name">
+                <label for="name">Nome</label>
+            </div>
 
-                <label for="lastname">Sobrenome</label>
+            <div class="field lastname">
                 <input type="text" name="lastname" id="lastname">
-            </fieldset>
+                <label for="lastname">Sobrenome</label>
+            </div>
 
             <div class="field email">
-                <label for="email">Email</label>
                 <input type="email" name="email" id="email">
+                <label for="email">Email</label>
             </div>
 
             <div class="field password">
-                <label for="password">Senha</label>
                 <input type="password" name="password" id="password">
+                <label for="password">Senha</label>
             </div>
 
             <div class="radio dev-end">
@@ -53,7 +56,8 @@
 
             <div class="field experience">
                 <label for="experience-text">Conte um pouco sobre sua experiência:</label>
-                <textarea name="experience-text" id="experience-text" cols="30" rows="10">Olá mundo, meu nome é...</textarea>
+                <textarea name="experience-text" id="experience-text" cols="30"
+                    rows="10">Olá mundo, meu nome é...</textarea>
             </div>
         </form>
     </main>
