@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+    <form method="post">
+        <p>
+            <label for="iuser">Usuário: </label>
+            <input type="text" name="user" id="iuser" required maxlength="25" minlength="5" size="16" placeholder="Mínimo de 5 caractéres" autocomplete="username">
+        </p>
+        <p>
+            <label for="ipassword">Senha: </label>
+            <input type="password" name="password" id="ipassword" required maxlength="25" minlength="8" size="16" placeholder="Mínimo de 8 caractéres" autocomplete="current-password">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
